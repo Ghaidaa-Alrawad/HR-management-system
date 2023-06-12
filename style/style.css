@@ -1,4 +1,14 @@
-/* Header */
+body {
+  /* background-color: rgba(244, 211, 211, 0.8);  */
+  background-color: rgba(244, 211, 211, 0.1);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+
 header {
     background-color: rgb(9, 5, 128);
     color: #fff;
@@ -13,12 +23,6 @@ header {
 }
 
 
-  
-  /* header ul li a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-  } */
 
 ul {
     list-style-type: none;
@@ -43,24 +47,6 @@ li a:hover {
     border-radius: 8px;
 }
   
-  /* Table */
-  /* #table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  #table th {
-    background-color: rgb(70, 69, 140);
-    color: #fff;
-    padding: 10px;
-  }
-  
-  #table td {
-    padding: 10px;
-    border: 1px solid rgb(232, 169, 169);
-  } */
-
-  
 #table{
     text-align: center;
     /* border: 5px solid rgb(70, 69, 140); */
@@ -69,6 +55,7 @@ li a:hover {
     padding: 10px;
     border-collapse: collapse;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 th, td {
@@ -104,6 +91,7 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: 20px;
+    border-radius: 0.5rem;
   }
   
   footer ul {

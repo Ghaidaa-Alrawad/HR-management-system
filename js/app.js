@@ -1,3 +1,5 @@
+'use strict';
+
 //making an emp constructor 
 function Employee(id, fullName, department, level) {
     this.id = id;
