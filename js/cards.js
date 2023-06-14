@@ -1,7 +1,9 @@
 'use strict';
 
 // Create a global array to store the employee objects
-const allEmployees = [];
+// const allEmployees = [];
+let allEmployees = [];
+
 
 // Get the <div> element for employee cards from the HTML file by its id
 let empCardsDiv = document.getElementById("empCards");
@@ -70,6 +72,7 @@ employee1.renderEmployeeCard();
 employee2.renderEmployeeCard();
 employee3.renderEmployeeCard();
 
+
 // Event listener for the form submission
 employeeForm.addEventListener("submit", submitHandler);
 
@@ -88,9 +91,36 @@ function submitHandler(event) {
 
   // Render the employee card
   newEmployee.renderEmployeeCard();
+  saveData(allEmployees);
 
   // Reset the form inputs
   employeeForm.reset();
 }
 
+// creat a function to save my object in the LS
+function saveData(data){
+  let stringArr = JSON.stringify(data); //convert it to array of strings
+  localStorage.setItem('Emps', stringArr);
+}
 
+
+function getData() {
+  let retrievedData = localStorage.getItem('Emps');
+  let parsedData = JSON.parse(retrievedData);
+
+  if (parsedData) {
+    for (let i = 3; i < parsedData.length; i++) {
+      let employeeData = parsedData[i];
+      let employee = new Employee(
+        employeeData.fullName,
+        employeeData.department,
+        employeeData.level,
+        employeeData.imgUrl
+      );
+      employee.renderEmployeeCard();
+    }
+  }
+}
+
+
+getData();
