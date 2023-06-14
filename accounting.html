@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>HR Management System</title>
 </head>
 <body>
@@ -20,7 +23,27 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+      <table id="department-table">
+        <thead>
+          <tr>
+            <th>Department</th>
+            <th>Number of employees</th>
+            <th>Total Salary</th>
+            <th>Average Salary</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr id="tableFooter">
+            <td>All Department total</td>
+            <td id="totalEmployees">0</td>
+            <td id="totalSalary">0</td>
+            <td id="averageSalary">0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
 
     <footer>
         <ul>
@@ -30,6 +53,8 @@
         </ul>
         <p>&copy; All rights reserved.</p>
     </footer>
+
+<script src="js/accounting.js"></script>
     
-</body>
+  </body>
 </html>

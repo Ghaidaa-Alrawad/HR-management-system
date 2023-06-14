@@ -71,3 +71,16 @@ employees.forEach(function(employee) {
 employees.forEach(function(employee) {
     employee.render();
 });
+
+
+// Convert the employees array to a JSON string
+var employeesJSON = JSON.stringify(employees);
+
+// Save the JSON string to local storage
+localStorage.setItem('employees', employeesJSON);
+
+// Retrieve the JSON string from local storage
+var employeesJSON = localStorage.getItem('employees');
+
+// Parse the JSON string back to an array
+var employees = JSON.parse(employeesJSON);

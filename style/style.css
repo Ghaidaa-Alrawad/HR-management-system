@@ -1,5 +1,4 @@
 body {
-  /* background-color: rgba(244, 211, 211, 0.8);  */
   background-color: rgba(244, 211, 211, 0.1);
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -21,8 +20,6 @@ header {
     font-size: larger;
     gap: 20px;
 }
-
-
 
 ul {
     list-style-type: none;
@@ -119,6 +116,3 @@ footer {
   footer p {
     margin-top: 10px;
   }
-  
-  
-   
